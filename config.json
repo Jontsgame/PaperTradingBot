@@ -1,5 +1,5 @@
 {
-  "strategy": "SampleStrategy",
+  "strategy": "DefaultStrategy",
   "max_open_trades": 3,
   "stake_currency": "USDT",
   "stake_amount": "unlimited",
