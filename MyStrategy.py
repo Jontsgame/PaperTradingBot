@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Fix für den Render-Container-Pfad
+sys.path.append('/freqtrade')
+
 from freqtrade.strategies import IStrategy
 from pandas import DataFrame
 import talib.abstract as ta
