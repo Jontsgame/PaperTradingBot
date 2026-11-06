@@ -1,0 +1,512 @@
+2026-11-06 16:59:34,249 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-11-06 16:59:34,249 - freqtrade.loggers - INFO - Logfile configured
+2026-11-06 16:59:34,250 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-11-06 16:59:34,251 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2026-11-06 16:59:34,251 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2026-11-06 16:59:34,252 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2026-11-06 16:59:34,253 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2026-11-06 16:59:34,253 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2026-11-06 16:59:34,317 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2026-11-06 16:59:34,320 - freqtrade.configuration.directory_operations - INFO - Created data directory: None
+2026-11-06 16:59:34,321 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2026-11-06 16:59:34,323 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-11-06 16:59:34,326 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2026-11-06 16:59:34,327 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-11-06 16:59:34,328 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-11-06 16:59:34,328 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.90
+2026-11-06 16:59:34,331 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2026-11-06 16:59:36,010 - freqtrade.exchange.exchange - WARNING - Your system time deviates by 3.9s from the time of Kraken. This can cause failing requests - please synchronize your system clock (e.g. via NTP).
+2026-11-06 16:59:36,012 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Kraken' ...
+2026-11-06 16:59:36,062 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2026-11-06 16:59:36,063 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2026-11-06 16:59:36,064 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value from the configuration: USDT.
+2026-11-06 16:59:36,065 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value from the configuration: unlimited.
+2026-11-06 16:59:36,065 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value from the configuration: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2026-11-06 16:59:36,066 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value from the configuration: 3.
+2026-11-06 16:59:36,067 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2026-11-06 16:59:36,067 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2026-11-06 16:59:36,068 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2026-11-06 16:59:36,068 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2026-11-06 16:59:36,069 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2026-11-06 16:59:36,070 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2026-11-06 16:59:36,070 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2026-11-06 16:59:36,071 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2026-11-06 16:59:36,071 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2026-11-06 16:59:36,072 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2026-11-06 16:59:36,072 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2026-11-06 16:59:36,073 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2026-11-06 16:59:36,074 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2026-11-06 16:59:36,074 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2026-11-06 16:59:36,075 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2026-11-06 16:59:36,075 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2026-11-06 16:59:36,076 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2026-11-06 16:59:36,076 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2026-11-06 16:59:36,077 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2026-11-06 16:59:36,078 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2026-11-06 16:59:36,078 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2026-11-06 16:59:36,079 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2026-11-06 16:59:36,079 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 3
+2026-11-06 16:59:36,080 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-11-06 16:59:36,343 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-06 16:59:36,654 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2026-11-06 16:59:36,824 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2026-11-06 16:59:36,928 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forceexit', 'forcesell', 'fx'], ['forcebuy', 'forcelong'], ['forceshort'], ['reload_trade'], ['trades'], ['delete'], ['cancel_open_order', 'coo'], ['performance'], ['buys', 'entries'], ['exits', 'sells'], ['mix_tags'], ['stats'], ['daily'], ['weekly'], ['monthly'], ['count'], ['locks'], ['delete_locks', 'unlock'], ['reload_conf', 'reload_config'], ['show_conf', 'show_config'], ['pause', 'stopbuy', 'stopentry'], ['whitelist'], ['blacklist'], ['bl_delete', 'blacklist_delete'], ['logs'], ['health'], ['help'], ['version'], ['marketdir'], ['order'], ['list_custom_data'], ['tg_info'], ['profit_long'], ['profit_short']]
+2026-11-06 16:59:36,964 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2026-11-06 16:59:36,966 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2026-11-06 16:59:36,997 - uvicorn.error - INFO - Started server process [1]
+2026-11-06 16:59:36,998 - uvicorn.error - INFO - Waiting for application startup.
+2026-11-06 16:59:36,999 - uvicorn.error - INFO - Application startup complete.
+2026-11-06 16:59:37,000 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2026-11-06 16:59:37,007 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2026-11-06 16:59:37,008 - freqtrade.freqtradebot - INFO - Starting initial pairlist refresh
+2026-11-06 16:59:37,152 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 20 pairs: ['USDC/USDT', 'BTC/USDT', 'SOL/USDT', 'ETH/USDT', 'XMR/USDT', 'XRP/USDT', 'RLUSD/USDT', 'LTC/USDT', 'ADA/USDT', 'USDG/USDT', 'DAI/USDT', 'XAUT/USDT', 'ALGO/USDT', 'LINK/USDT', 'DOGE/USDT', 'FIDD/USDT', 'TRUMP/USDT', 'AVAX/USDT', 'ALEO/USDT', 'DOT/USDT']
+2026-11-06 16:59:37,154 - freqtrade.freqtradebot - INFO - Initial Pairlist refresh took 0.15s
+2026-11-06 16:59:37,155 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2026-11-06 16:59:37,155 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_rsi = 30
+2026-11-06 16:59:37,156 - freqtrade.strategy.hyper - INFO - No params for exit found, using default values.
+2026-11-06 16:59:37,157 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): exit_short_rsi = 30
+2026-11-06 16:59:37,157 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2026-11-06 16:59:37,158 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_rsi = 70
+2026-11-06 16:59:37,158 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): short_rsi = 70
+2026-11-06 16:59:37,159 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2026-11-06 16:59:37,160 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2026-11-06 16:59:37,160 - freqtrade.worker - INFO - Changing state to: RUNNING
+2026-11-06 16:59:37,181 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2026-11-06 16:59:37,182 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `kraken`\n*Stake per trade:* `unlimited USDT`\n*Minimum ROI:* `{'60': 0.01, '30': 0.02, '0': 0.04}`\n*Stoploss:* `-0.1`\n*Position adjustment:* `Off`\n*Timeframe:* `5m`\n*Strategy:* `SampleStrategy`"}
+2026-11-06 16:59:37,184 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 20 volume pairs.'}]"}
+2026-11-06 16:59:37,192 - telegram.ext.Application - INFO - Application started
+2026-11-06 16:59:37,392 - freqtrade.rpc.telegram - WARNING - TelegramError: Forbidden: the bot can't send messages to the bot! Giving up on that message.
+2026-11-06 16:59:37,423 - freqtrade.rpc.telegram - WARNING - TelegramError: Forbidden: the bot can't send messages to the bot! Giving up on that message.
+2026-11-06 16:59:37,425 - freqtrade.rpc.telegram - WARNING - TelegramError: Forbidden: the bot can't send messages to the bot! Giving up on that message.
+2026-11-06 16:59:37,435 - freqtrade.rpc.telegram - WARNING - TelegramError: Forbidden: the bot can't send messages to the bot! Giving up on that message.
+2026-11-06 16:59:52,287 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-11-06 17:00:01,363 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:00:42,153 - uvicorn.error - INFO - 172.18.0.1:33480 - "WebSocket /api/v1/message/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6eyJ1IjoiZnJlcXRyYWRlciJ9LCJleHAiOjE3OTM5ODUzNDIsImlhdCI6MTc5Mzk4NDQ0MiwidHlwZSI6ImFjY2VzcyJ9.M3HLyHl8EAfumS0TVAKm1BGWS1CIepSFuJJEofOuyVg" [accepted]
+2026-11-06 17:00:42,154 - uvicorn.error - INFO - connection open
+2026-11-06 17:00:42,155 - freqtrade.rpc.api_server.ws.channel - INFO - Connected to channel - WebSocketChannel(6de10272, ('172.18.0.1', 33480))
+2026-11-06 17:01:03,806 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2026-11-06 17:01:03,807 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2026-11-06 17:01:03,808 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2026-11-06 17:01:03,811 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc modules ...
+2026-11-06 17:01:03,812 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.apiserver ...
+2026-11-06 17:01:03,813 - freqtrade.rpc.api_server.webserver - INFO - Stopping API Server
+2026-11-06 17:01:03,852 - uvicorn.error - INFO - Shutting down
+2026-11-06 17:01:03,854 - freqtrade.rpc.api_server.ws.channel - INFO - Disconnected from channel - WebSocketChannel(6de10272, ('172.18.0.1', 33480))
+2026-11-06 17:01:03,954 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-11-06 17:01:03,955 - uvicorn.error - INFO - Application shutdown complete.
+2026-11-06 17:01:03,956 - uvicorn.error - INFO - Finished server process [1]
+2026-11-06 17:01:03,956 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.telegram ...
+2026-11-06 17:01:03,983 - freqtrade.rpc.telegram - WARNING - TelegramError: Forbidden: the bot can't send messages to the bot! Giving up on that message.
+2026-11-06 17:01:04,113 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-11-06 17:01:04,114 - telegram.ext.Application - INFO - Application.stop() complete
+2026-11-06 17:01:37,189 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-11-06 17:01:37,190 - freqtrade.loggers - INFO - Logfile configured
+2026-11-06 17:01:37,190 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-11-06 17:01:37,191 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2026-11-06 17:01:37,192 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2026-11-06 17:01:37,192 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2026-11-06 17:01:37,193 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2026-11-06 17:01:37,193 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2026-11-06 17:01:37,244 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2026-11-06 17:01:37,246 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2026-11-06 17:01:37,247 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-11-06 17:01:37,250 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2026-11-06 17:01:37,250 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-11-06 17:01:37,251 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-11-06 17:01:37,252 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.90
+2026-11-06 17:01:37,254 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2026-11-06 17:01:38,610 - freqtrade.exchange.exchange - WARNING - Your system time deviates by 3.5s from the time of Kraken. This can cause failing requests - please synchronize your system clock (e.g. via NTP).
+2026-11-06 17:01:38,611 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Kraken' ...
+2026-11-06 17:01:38,652 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2026-11-06 17:01:38,654 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2026-11-06 17:01:38,655 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value from the configuration: USDT.
+2026-11-06 17:01:38,656 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value from the configuration: unlimited.
+2026-11-06 17:01:38,656 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value from the configuration: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2026-11-06 17:01:38,657 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value from the configuration: 3.
+2026-11-06 17:01:38,657 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2026-11-06 17:01:38,658 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2026-11-06 17:01:38,659 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2026-11-06 17:01:38,659 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2026-11-06 17:01:38,660 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2026-11-06 17:01:38,660 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2026-11-06 17:01:38,661 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2026-11-06 17:01:38,662 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2026-11-06 17:01:38,662 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2026-11-06 17:01:38,663 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2026-11-06 17:01:38,664 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2026-11-06 17:01:38,664 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2026-11-06 17:01:38,665 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2026-11-06 17:01:38,665 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2026-11-06 17:01:38,666 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2026-11-06 17:01:38,667 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2026-11-06 17:01:38,667 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2026-11-06 17:01:38,668 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2026-11-06 17:01:38,668 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2026-11-06 17:01:38,669 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2026-11-06 17:01:38,670 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2026-11-06 17:01:38,670 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2026-11-06 17:01:38,671 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 3
+2026-11-06 17:01:38,672 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-11-06 17:01:38,716 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-06 17:01:39,042 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2026-11-06 17:01:39,128 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2026-11-06 17:01:39,222 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forceexit', 'forcesell', 'fx'], ['forcebuy', 'forcelong'], ['forceshort'], ['reload_trade'], ['trades'], ['delete'], ['cancel_open_order', 'coo'], ['performance'], ['buys', 'entries'], ['exits', 'sells'], ['mix_tags'], ['stats'], ['daily'], ['weekly'], ['monthly'], ['count'], ['locks'], ['delete_locks', 'unlock'], ['reload_conf', 'reload_config'], ['show_conf', 'show_config'], ['pause', 'stopbuy', 'stopentry'], ['whitelist'], ['blacklist'], ['bl_delete', 'blacklist_delete'], ['logs'], ['health'], ['help'], ['version'], ['marketdir'], ['order'], ['list_custom_data'], ['tg_info'], ['profit_long'], ['profit_short']]
+2026-11-06 17:01:39,259 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2026-11-06 17:01:39,261 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2026-11-06 17:01:39,275 - uvicorn.error - INFO - Started server process [1]
+2026-11-06 17:01:39,276 - uvicorn.error - INFO - Waiting for application startup.
+2026-11-06 17:01:39,277 - uvicorn.error - INFO - Application startup complete.
+2026-11-06 17:01:39,277 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2026-11-06 17:01:39,280 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2026-11-06 17:01:39,281 - freqtrade.freqtradebot - INFO - Starting initial pairlist refresh
+2026-11-06 17:01:39,431 - freqtrade.rpc.telegram - ERROR - Error starting Telegram bot (attempt 1/3): The token `AAHhV_Hkt8QQNc_MyelG49PZ7Wl_rqfjlNs` was rejected by the server.
+2026-11-06 17:01:39,676 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 20 pairs: ['USDC/USDT', 'BTC/USDT', 'SOL/USDT', 'ETH/USDT', 'XMR/USDT', 'XRP/USDT', 'RLUSD/USDT', 'LTC/USDT', 'ADA/USDT', 'USDG/USDT', 'DAI/USDT', 'XAUT/USDT', 'ALGO/USDT', 'LINK/USDT', 'DOGE/USDT', 'FIDD/USDT', 'TRUMP/USDT', 'AVAX/USDT', 'ALEO/USDT', 'DOT/USDT']
+2026-11-06 17:01:39,677 - freqtrade.freqtradebot - INFO - Initial Pairlist refresh took 0.40s
+2026-11-06 17:01:39,679 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2026-11-06 17:01:39,680 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_rsi = 30
+2026-11-06 17:01:39,680 - freqtrade.strategy.hyper - INFO - No params for exit found, using default values.
+2026-11-06 17:01:39,681 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): exit_short_rsi = 30
+2026-11-06 17:01:39,682 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2026-11-06 17:01:39,682 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_rsi = 70
+2026-11-06 17:01:39,683 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): short_rsi = 70
+2026-11-06 17:01:39,683 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2026-11-06 17:01:39,684 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2026-11-06 17:01:39,685 - freqtrade.worker - INFO - Changing state to: RUNNING
+2026-11-06 17:01:39,699 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2026-11-06 17:01:39,700 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `kraken`\n*Stake per trade:* `unlimited USDT`\n*Minimum ROI:* `{'60': 0.01, '30': 0.02, '0': 0.04}`\n*Stoploss:* `-0.1`\n*Position adjustment:* `Off`\n*Timeframe:* `5m`\n*Strategy:* `SampleStrategy`"}
+2026-11-06 17:01:39,702 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 20 volume pairs.'}]"}
+2026-11-06 17:01:39,719 - freqtrade.rpc.telegram - WARNING - TelegramError: Not Found! Giving up on that message.
+2026-11-06 17:01:39,870 - freqtrade.rpc.telegram - WARNING - TelegramError: Not Found! Giving up on that message.
+2026-11-06 17:01:39,872 - freqtrade.rpc.telegram - WARNING - TelegramError: Not Found! Giving up on that message.
+2026-11-06 17:01:39,874 - freqtrade.rpc.telegram - WARNING - TelegramError: Not Found! Giving up on that message.
+2026-11-06 17:01:41,467 - freqtrade.rpc.telegram - ERROR - Error starting Telegram bot (attempt 2/3): The token `AAHhV_Hkt8QQNc_MyelG49PZ7Wl_rqfjlNs` was rejected by the server.
+2026-11-06 17:01:43,507 - freqtrade.rpc.telegram - ERROR - Error starting Telegram bot (attempt 3/3): The token `AAHhV_Hkt8QQNc_MyelG49PZ7Wl_rqfjlNs` was rejected by the server.
+2026-11-06 17:01:43,508 - freqtrade.rpc.telegram - WARNING - Telegram init failed.
+2026-11-06 17:01:45,461 - uvicorn.error - INFO - 172.18.0.1:35514 - "WebSocket /api/v1/message/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6eyJ1IjoiZnJlcXRyYWRlciJ9LCJleHAiOjE3OTM5ODUzNDIsImlhdCI6MTc5Mzk4NDQ0MiwidHlwZSI6ImFjY2VzcyJ9.M3HLyHl8EAfumS0TVAKm1BGWS1CIepSFuJJEofOuyVg" [accepted]
+2026-11-06 17:01:45,466 - uvicorn.error - INFO - connection open
+2026-11-06 17:01:45,468 - freqtrade.rpc.api_server.ws.channel - INFO - Connected to channel - WebSocketChannel(312f550a, ('172.18.0.1', 35514))
+2026-11-06 17:02:03,944 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:03:03,946 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:04:03,947 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:05:25,464 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:06:25,465 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:07:25,466 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:08:25,468 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:09:06,531 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2026-11-06 17:09:06,532 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2026-11-06 17:09:06,533 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2026-11-06 17:09:06,535 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc modules ...
+2026-11-06 17:09:06,536 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.apiserver ...
+2026-11-06 17:09:06,536 - freqtrade.rpc.api_server.webserver - INFO - Stopping API Server
+2026-11-06 17:09:06,633 - uvicorn.error - INFO - Shutting down
+2026-11-06 17:09:06,635 - freqtrade.rpc.api_server.ws.channel - INFO - Disconnected from channel - WebSocketChannel(312f550a, ('172.18.0.1', 35514))
+2026-11-06 17:09:06,735 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-11-06 17:09:06,736 - uvicorn.error - INFO - Application shutdown complete.
+2026-11-06 17:09:06,737 - uvicorn.error - INFO - Finished server process [1]
+2026-11-06 17:09:06,738 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.telegram ...
+2026-11-06 17:09:06,990 - freqtrade - INFO - SIGINT received, aborting ...
+2026-11-06 17:09:17,069 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-11-06 17:09:17,070 - freqtrade.loggers - INFO - Logfile configured
+2026-11-06 17:09:17,070 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-11-06 17:09:17,071 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2026-11-06 17:09:17,072 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2026-11-06 17:09:17,072 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2026-11-06 17:09:17,073 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2026-11-06 17:09:17,073 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2026-11-06 17:09:17,141 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2026-11-06 17:09:17,143 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2026-11-06 17:09:17,144 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-11-06 17:09:17,147 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2026-11-06 17:09:17,147 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-11-06 17:09:17,148 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-11-06 17:09:17,149 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.90
+2026-11-06 17:09:17,151 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2026-11-06 17:09:18,575 - freqtrade.exchange.exchange - INFO - Time offset to Kraken is 494ms.
+2026-11-06 17:09:18,576 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Kraken' ...
+2026-11-06 17:09:18,629 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2026-11-06 17:09:18,632 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2026-11-06 17:09:18,632 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value from the configuration: USDT.
+2026-11-06 17:09:18,633 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value from the configuration: unlimited.
+2026-11-06 17:09:18,634 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value from the configuration: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2026-11-06 17:09:18,634 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value from the configuration: 3.
+2026-11-06 17:09:18,635 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2026-11-06 17:09:18,636 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2026-11-06 17:09:18,636 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2026-11-06 17:09:18,637 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2026-11-06 17:09:18,637 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2026-11-06 17:09:18,638 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2026-11-06 17:09:18,639 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2026-11-06 17:09:18,639 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2026-11-06 17:09:18,640 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2026-11-06 17:09:18,640 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2026-11-06 17:09:18,641 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2026-11-06 17:09:18,642 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2026-11-06 17:09:18,642 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2026-11-06 17:09:18,643 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2026-11-06 17:09:18,644 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2026-11-06 17:09:18,644 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2026-11-06 17:09:18,645 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2026-11-06 17:09:18,645 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2026-11-06 17:09:18,646 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2026-11-06 17:09:18,647 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2026-11-06 17:09:18,647 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2026-11-06 17:09:18,648 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2026-11-06 17:09:18,649 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 3
+2026-11-06 17:09:18,649 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-11-06 17:09:18,697 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-06 17:09:18,932 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2026-11-06 17:09:19,118 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2026-11-06 17:09:19,225 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forceexit', 'forcesell', 'fx'], ['forcebuy', 'forcelong'], ['forceshort'], ['reload_trade'], ['trades'], ['delete'], ['cancel_open_order', 'coo'], ['performance'], ['buys', 'entries'], ['exits', 'sells'], ['mix_tags'], ['stats'], ['daily'], ['weekly'], ['monthly'], ['count'], ['locks'], ['delete_locks', 'unlock'], ['reload_conf', 'reload_config'], ['show_conf', 'show_config'], ['pause', 'stopbuy', 'stopentry'], ['whitelist'], ['blacklist'], ['bl_delete', 'blacklist_delete'], ['logs'], ['health'], ['help'], ['version'], ['marketdir'], ['order'], ['list_custom_data'], ['tg_info'], ['profit_long'], ['profit_short']]
+2026-11-06 17:09:19,265 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2026-11-06 17:09:19,267 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2026-11-06 17:09:19,294 - uvicorn.error - INFO - Started server process [1]
+2026-11-06 17:09:19,295 - uvicorn.error - INFO - Waiting for application startup.
+2026-11-06 17:09:19,296 - uvicorn.error - INFO - Application startup complete.
+2026-11-06 17:09:19,297 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2026-11-06 17:09:19,305 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2026-11-06 17:09:19,306 - freqtrade.freqtradebot - INFO - Starting initial pairlist refresh
+2026-11-06 17:09:19,484 - telegram.ext.Application - INFO - Application started
+2026-11-06 17:09:19,545 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 20 pairs: ['USDC/USDT', 'BTC/USDT', 'SOL/USDT', 'ETH/USDT', 'XMR/USDT', 'XRP/USDT', 'RLUSD/USDT', 'LTC/USDT', 'ADA/USDT', 'USDG/USDT', 'DAI/USDT', 'ALGO/USDT', 'XAUT/USDT', 'LINK/USDT', 'FIDD/USDT', 'DOGE/USDT', 'TRUMP/USDT', 'AVAX/USDT', 'ALEO/USDT', 'DOT/USDT']
+2026-11-06 17:09:19,547 - freqtrade.freqtradebot - INFO - Initial Pairlist refresh took 0.24s
+2026-11-06 17:09:19,548 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2026-11-06 17:09:19,548 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_rsi = 30
+2026-11-06 17:09:19,549 - freqtrade.strategy.hyper - INFO - No params for exit found, using default values.
+2026-11-06 17:09:19,549 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): exit_short_rsi = 30
+2026-11-06 17:09:19,550 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2026-11-06 17:09:19,551 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_rsi = 70
+2026-11-06 17:09:19,551 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): short_rsi = 70
+2026-11-06 17:09:19,552 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2026-11-06 17:09:19,552 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2026-11-06 17:09:19,553 - freqtrade.worker - INFO - Changing state to: RUNNING
+2026-11-06 17:09:19,563 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2026-11-06 17:09:19,564 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `kraken`\n*Stake per trade:* `unlimited USDT`\n*Minimum ROI:* `{'60': 0.01, '30': 0.02, '0': 0.04}`\n*Stoploss:* `-0.1`\n*Position adjustment:* `Off`\n*Timeframe:* `5m`\n*Strategy:* `SampleStrategy`"}
+2026-11-06 17:09:19,566 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 20 volume pairs.'}]"}
+2026-11-06 17:09:19,742 - freqtrade.rpc.telegram - WARNING - Telegram NetworkError: Chat not found! Trying one more time.
+2026-11-06 17:09:19,777 - freqtrade.rpc.telegram - WARNING - Telegram NetworkError: Chat not found! Trying one more time.
+2026-11-06 17:09:19,804 - freqtrade.rpc.telegram - WARNING - Telegram NetworkError: Chat not found! Trying one more time.
+2026-11-06 17:09:19,823 - freqtrade.rpc.telegram - WARNING - TelegramError: Chat not found! Giving up on that message.
+2026-11-06 17:09:19,843 - freqtrade.rpc.telegram - WARNING - TelegramError: Chat not found! Giving up on that message.
+2026-11-06 17:09:19,880 - freqtrade.rpc.telegram - WARNING - TelegramError: Chat not found! Giving up on that message.
+2026-11-06 17:09:19,929 - freqtrade.rpc.telegram - WARNING - Telegram NetworkError: Chat not found! Trying one more time.
+2026-11-06 17:09:19,999 - freqtrade.rpc.telegram - WARNING - TelegramError: Chat not found! Giving up on that message.
+2026-11-06 17:09:20,627 - uvicorn.error - INFO - 172.18.0.1:40370 - "WebSocket /api/v1/message/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6eyJ1IjoiZnJlcXRyYWRlciJ9LCJleHAiOjE3OTM5ODUzNDIsImlhdCI6MTc5Mzk4NDQ0MiwidHlwZSI6ImFjY2VzcyJ9.M3HLyHl8EAfumS0TVAKm1BGWS1CIepSFuJJEofOuyVg" [accepted]
+2026-11-06 17:09:20,634 - uvicorn.error - INFO - connection open
+2026-11-06 17:09:20,643 - freqtrade.rpc.api_server.ws.channel - INFO - Connected to channel - WebSocketChannel(cd7b69f3, ('172.18.0.1', 40370))
+2026-11-06 17:09:43,752 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:10:25,958 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2026-11-06 17:10:25,959 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2026-11-06 17:10:25,960 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2026-11-06 17:10:25,962 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc modules ...
+2026-11-06 17:10:25,964 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.apiserver ...
+2026-11-06 17:10:25,966 - freqtrade.rpc.api_server.webserver - INFO - Stopping API Server
+2026-11-06 17:10:25,967 - freqtrade.rpc.api_server.webserver - ERROR - API Error calling: Bot is not in the correct state
+2026-11-06 17:10:25,973 - freqtrade.rpc.api_server.webserver - ERROR - API Error calling: Bot is not in the correct state
+2026-11-06 17:10:26,063 - uvicorn.error - INFO - Shutting down
+2026-11-06 17:10:26,064 - freqtrade.rpc.api_server.ws.channel - INFO - Disconnected from channel - WebSocketChannel(cd7b69f3, ('172.18.0.1', 40370))
+2026-11-06 17:10:26,165 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-11-06 17:10:26,166 - uvicorn.error - INFO - Application shutdown complete.
+2026-11-06 17:10:26,167 - uvicorn.error - INFO - Finished server process [1]
+2026-11-06 17:10:26,168 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.telegram ...
+2026-11-06 17:10:26,262 - freqtrade.rpc.telegram - WARNING - Telegram NetworkError: Chat not found! Trying one more time.
+2026-11-06 17:10:26,315 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-11-06 17:10:26,316 - telegram.ext.Application - INFO - Application.stop() complete
+2026-11-06 17:10:26,317 - freqtrade.rpc.telegram - WARNING - TelegramError: httpx.ReadError: ! Giving up on that message.
+2026-11-06 17:10:54,349 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-11-06 17:10:54,349 - freqtrade.loggers - INFO - Logfile configured
+2026-11-06 17:10:54,350 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-11-06 17:10:54,350 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2026-11-06 17:10:54,351 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2026-11-06 17:10:54,352 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2026-11-06 17:10:54,352 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2026-11-06 17:10:54,353 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2026-11-06 17:10:54,400 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2026-11-06 17:10:54,402 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2026-11-06 17:10:54,403 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-11-06 17:10:54,406 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2026-11-06 17:10:54,406 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-11-06 17:10:54,410 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-11-06 17:10:54,411 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.90
+2026-11-06 17:10:54,413 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2026-11-06 17:10:55,806 - freqtrade.exchange.exchange - INFO - Time offset to Kraken is 734ms.
+2026-11-06 17:10:55,808 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Kraken' ...
+2026-11-06 17:10:55,849 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2026-11-06 17:10:55,851 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2026-11-06 17:10:55,852 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value from the configuration: USDT.
+2026-11-06 17:10:55,852 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value from the configuration: unlimited.
+2026-11-06 17:10:55,853 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value from the configuration: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2026-11-06 17:10:55,854 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value from the configuration: 3.
+2026-11-06 17:10:55,854 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2026-11-06 17:10:55,855 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2026-11-06 17:10:55,856 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2026-11-06 17:10:55,856 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2026-11-06 17:10:55,857 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2026-11-06 17:10:55,858 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2026-11-06 17:10:55,858 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2026-11-06 17:10:55,859 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2026-11-06 17:10:55,860 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2026-11-06 17:10:55,860 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2026-11-06 17:10:55,861 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2026-11-06 17:10:55,861 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2026-11-06 17:10:55,862 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2026-11-06 17:10:55,862 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2026-11-06 17:10:55,863 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2026-11-06 17:10:55,864 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2026-11-06 17:10:55,864 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2026-11-06 17:10:55,865 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2026-11-06 17:10:55,865 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2026-11-06 17:10:55,866 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2026-11-06 17:10:55,867 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2026-11-06 17:10:55,867 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2026-11-06 17:10:55,868 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 3
+2026-11-06 17:10:55,868 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-11-06 17:10:55,909 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-06 17:10:56,184 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2026-11-06 17:10:56,268 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2026-11-06 17:10:56,388 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forceexit', 'forcesell', 'fx'], ['forcebuy', 'forcelong'], ['forceshort'], ['reload_trade'], ['trades'], ['delete'], ['cancel_open_order', 'coo'], ['performance'], ['buys', 'entries'], ['exits', 'sells'], ['mix_tags'], ['stats'], ['daily'], ['weekly'], ['monthly'], ['count'], ['locks'], ['delete_locks', 'unlock'], ['reload_conf', 'reload_config'], ['show_conf', 'show_config'], ['pause', 'stopbuy', 'stopentry'], ['whitelist'], ['blacklist'], ['bl_delete', 'blacklist_delete'], ['logs'], ['health'], ['help'], ['version'], ['marketdir'], ['order'], ['list_custom_data'], ['tg_info'], ['profit_long'], ['profit_short']]
+2026-11-06 17:10:56,399 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2026-11-06 17:10:56,401 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2026-11-06 17:10:56,416 - uvicorn.error - INFO - Started server process [1]
+2026-11-06 17:10:56,417 - uvicorn.error - INFO - Waiting for application startup.
+2026-11-06 17:10:56,418 - uvicorn.error - INFO - Application startup complete.
+2026-11-06 17:10:56,419 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2026-11-06 17:10:56,423 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2026-11-06 17:10:56,423 - freqtrade.freqtradebot - INFO - Starting initial pairlist refresh
+2026-11-06 17:10:56,665 - telegram.ext.Application - INFO - Application started
+2026-11-06 17:10:56,797 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 20 pairs: ['USDC/USDT', 'BTC/USDT', 'SOL/USDT', 'ETH/USDT', 'XMR/USDT', 'XRP/USDT', 'RLUSD/USDT', 'LTC/USDT', 'ADA/USDT', 'USDG/USDT', 'DAI/USDT', 'ALGO/USDT', 'XAUT/USDT', 'LINK/USDT', 'FIDD/USDT', 'DOGE/USDT', 'TRUMP/USDT', 'AVAX/USDT', 'ALEO/USDT', 'DOT/USDT']
+2026-11-06 17:10:56,798 - freqtrade.freqtradebot - INFO - Initial Pairlist refresh took 0.37s
+2026-11-06 17:10:56,800 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2026-11-06 17:10:56,800 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_rsi = 30
+2026-11-06 17:10:56,801 - freqtrade.strategy.hyper - INFO - No params for exit found, using default values.
+2026-11-06 17:10:56,802 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): exit_short_rsi = 30
+2026-11-06 17:10:56,802 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2026-11-06 17:10:56,803 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_rsi = 70
+2026-11-06 17:10:56,804 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): short_rsi = 70
+2026-11-06 17:10:56,804 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2026-11-06 17:10:56,805 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2026-11-06 17:10:56,806 - freqtrade.worker - INFO - Changing state to: RUNNING
+2026-11-06 17:10:56,817 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2026-11-06 17:10:56,817 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `kraken`\n*Stake per trade:* `unlimited USDT`\n*Minimum ROI:* `{'60': 0.01, '30': 0.02, '0': 0.04}`\n*Stoploss:* `-0.1`\n*Position adjustment:* `Off`\n*Timeframe:* `5m`\n*Strategy:* `SampleStrategy`"}
+2026-11-06 17:10:56,819 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 20 volume pairs.'}]"}
+2026-11-06 17:11:20,997 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:11:25,679 - uvicorn.error - INFO - 172.18.0.1:37472 - "WebSocket /api/v1/message/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6eyJ1IjoiZnJlcXRyYWRlciJ9LCJleHAiOjE3OTM5ODUzNDIsImlhdCI6MTc5Mzk4NDQ0MiwidHlwZSI6ImFjY2VzcyJ9.M3HLyHl8EAfumS0TVAKm1BGWS1CIepSFuJJEofOuyVg" [accepted]
+2026-11-06 17:11:25,680 - uvicorn.error - INFO - connection open
+2026-11-06 17:11:25,681 - freqtrade.rpc.api_server.ws.channel - INFO - Connected to channel - WebSocketChannel(a1e2d3a4, ('172.18.0.1', 37472))
+2026-11-06 17:12:20,997 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:13:20,999 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:14:21,000 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:15:01,195 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/ftuser/.local/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-11-06 17:15:25,447 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:16:25,448 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:17:25,449 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:18:25,450 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:19:25,451 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:20:30,434 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:21:30,438 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:22:30,439 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:23:02,381 - freqtrade.rpc.telegram - WARNING - Telegram NetworkError: Timed out! Trying one more time.
+2026-11-06 17:23:30,441 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:24:30,442 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:25:30,464 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-06 17:26:30,466 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
