@@ -1,3 +1,4 @@
+# Ändere den Import ganz oben in deiner SampleStrategy.py zu:
 from freqtrade.strategies import IStrategy
 from pandas import DataFrame
 import talib.abstract as ta
